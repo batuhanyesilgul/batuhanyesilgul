@@ -253,3 +253,5 @@
 #         toplam=toplam+sayi
 #         sayac=sayac+1
 # print("Ortalama: ",(toplam/sayac))
+
+#print()adewadqewdqqw
