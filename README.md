@@ -3,7 +3,6 @@
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=27&pause=1100&color=58A6FF&center=true&vCenter=true&width=560&lines=AI+Engineer;LLM+systems+that+run+in+production;Python+%C2%B7+Django+%C2%B7+NestJS+%C2%B7+Angular" alt="AI Engineer" />
 
 <p>
-  <b>Batuhan Yeşilgül</b><br />
   <sub>I build AI-powered business software — the kind that runs inside a company every day, not demos.</sub>
 </p>
 
