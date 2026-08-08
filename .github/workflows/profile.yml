@@ -27,9 +27,10 @@ jobs:
         with:
           python-version: "3.12"
 
-      # PROFILE_TOKEN (a PAT with `repo`) makes the card include private
-      # repositories. Without it the built-in token sees public repos only.
-      - name: Generate language card
+      # PROFILE_TOKEN must be a PAT that can read private repositories. Without it
+      # the commit search comes back empty and the script aborts on purpose rather
+      # than publishing a chart that understates the work.
+      - name: Generate activity chart
         env:
           GH_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
           GH_LOGIN: ${{ github.repository_owner }}
