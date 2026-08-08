@@ -8,6 +8,12 @@ on:
     branches:
       - main
 
+# Two runs pushing to `output` at once get one rejected on a ref lock, so queue
+# them instead of letting them race.
+concurrency:
+  group: profile-assets
+  cancel-in-progress: false
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
