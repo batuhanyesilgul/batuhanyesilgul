@@ -111,19 +111,17 @@ def render(languages: dict[str, tuple[int, str]], theme: dict, top: int = 8) -> 
 
     rows = (len(ranked) + 1) // 2
     width = 470
-    height = 96 + rows * 26 + 26
+    # No heading: the bar sits at the top and the legend labels speak for themselves.
+    height = 106 + (rows - 1) * 26
 
     out = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
         f'viewBox="0 0 {width} {height}" role="img" aria-label="Code by language">',
         f'<rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="10" '
         f'fill="{theme["bg"]}" stroke="{theme["border"]}"/>',
-        f'<text x="24" y="34" font-family="{FONT}" font-size="16" font-weight="600" '
-        f'fill="{theme["title"]}">Code by language</text>',
-        f'<line x1="24" y1="48" x2="{width - 24}" y2="48" stroke="{theme["border"]}"/>',
     ]
 
-    bar_x, bar_w, bar_y, bar_h = 24, width - 48, 64, 10
+    bar_x, bar_w, bar_y, bar_h = 24, width - 48, 24, 10
     out.append(
         f'<rect x="{bar_x}" y="{bar_y}" width="{bar_w}" height="{bar_h}" rx="5" '
         f'fill="{theme["track"]}"/>'
@@ -145,7 +143,7 @@ def render(languages: dict[str, tuple[int, str]], theme: dict, top: int = 8) -> 
 
     for idx, (name, (size, color)) in enumerate(ranked):
         x = 24 + (idx % 2) * 214
-        y = 104 + (idx // 2) * 26
+        y = 64 + (idx // 2) * 26
         out.append(f'<circle cx="{x + 5}" cy="{y - 4}" r="5" fill="{color}"/>')
         out.append(
             f'<text x="{x + 18}" y="{y}" font-family="{FONT}" font-size="12.5" '
