@@ -6,6 +6,12 @@
   <sub>I build AI-powered business software — the kind that runs inside a company every day, not demos.</sub>
 </p>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/batuhanyesilgul/batuhanyesilgul/output/activity-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/batuhanyesilgul/batuhanyesilgul/output/activity-light.svg" />
+  <img src="https://raw.githubusercontent.com/batuhanyesilgul/batuhanyesilgul/output/activity-dark.svg" alt="Commit activity over the last 31 days" width="100%" />
+</picture>
+
 </div>
 
 ---
@@ -132,20 +138,7 @@ permissions, audit trails, and a UI someone non-technical can actually use.
 ---
 
 <div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/batuhanyesilgul/batuhanyesilgul/output/langs-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/batuhanyesilgul/batuhanyesilgul/output/langs-light.svg" />
-  <img src="https://raw.githubusercontent.com/batuhanyesilgul/batuhanyesilgul/output/langs-dark.svg" alt="Code by language" />
-</picture>
-
-<sub>Generated nightly by <a href="https://github.com/batuhanyesilgul/batuhanyesilgul/blob/main/scripts/generate_cards.py"><code>scripts/generate_cards.py</code></a> —
-a self-hosted card, so it never breaks on someone else's rate limit.</sub>
-
-</div>
-
----
-
-<div align="center">
-<sub>Every asset on this page is generated inside this repository by GitHub Actions.</sub>
+<sub>The chart above is generated inside this repository by
+<a href="https://github.com/batuhanyesilgul/batuhanyesilgul/blob/main/scripts/generate_cards.py"><code>scripts/generate_cards.py</code></a>
+on a nightly GitHub Action — self-hosted, so it never breaks on someone else's rate limit.</sub>
 </div>
