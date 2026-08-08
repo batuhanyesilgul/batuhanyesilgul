@@ -132,8 +132,6 @@ permissions, audit trails, and a UI someone non-technical can actually use.
 
 ---
 
-## 📊 Code by Language
-
 <div align="center">
 
 <picture>
